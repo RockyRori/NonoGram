@@ -1,0 +1,25 @@
+{
+    "rows": 5,
+    "cols": 5,
+    "rowHints": [
+        [1, 1],
+        [1, 1],
+        [1],
+        [1, 1],
+        [1, 1]
+    ],
+    "colHints": [
+        [1, 1],
+        [1, 1],
+        [1],
+        [1, 1],
+        [1, 1]
+    ],
+    "solution": [
+        [true, false, false, false, true],
+        [false, true, false, true, false],
+        [false, false, true, false, false],
+        [false, true, false, true, false],
+        [true, false, false, false, true]
+    ]
+}

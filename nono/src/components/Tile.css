@@ -1,0 +1,28 @@
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.tile.filled {
+    background-color: #333;
+    color: #fff;
+}
+
+.tile.marked {
+    background-color: #fff;
+    color: red;
+}
+
+.tile.locked {
+    /* 让锁定格子有些特殊显示，比如边框加粗/背景变色等 */
+    outline: 2px solid gold;
+}

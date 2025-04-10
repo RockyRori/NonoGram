@@ -1,0 +1,40 @@
+{
+    "rows": 10,
+    "cols": 10,
+    "rowHints": [
+        [6],
+        [1, 1],
+        [1, 1, 1, 1],
+        [1, 1],
+        [1, 1, 1, 1],
+        [1, 4, 1],
+        [1, 1],
+        [1, 1],
+        [4],
+        [0]
+    ],
+    "colHints": [
+        [4],
+        [1, 1],
+        [1, 1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1, 1],
+        [1, 1],
+        [4]
+    ],
+    "solution": [
+        [false, false, true, true, true, true, true, true, false, false],
+        [false, true, false, false, false, false, false, false, true, false],
+        [true, false, true, false, false, false, false, true, false, true],
+        [true, false, false, false, false, false, false, false, false, true],
+        [true, false, true, false, false, false, false, true, false, true],
+        [true, false, false, true, true, true, true, false, false, true],
+        [false, true, false, false, false, false, false, false, true, false],
+        [false, false, true, false, false, false, false, true, false, false],
+        [false, false, false, true, true, true, true, false, false, false],
+        [false, false, false, false, false, false, false, false, false, false]
+    ]
+}

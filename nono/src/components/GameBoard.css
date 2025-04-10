@@ -1,0 +1,85 @@
+.board-container {
+    display: grid;
+    /* 两行两列网格：
+       - row1: blank-corner + col-hints
+       - row2: row-hints + board-grid
+     */
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 4px;
+    /* 行列间的间隔，可自行调节 */
+    margin: 20px auto;
+    justify-content: center;
+    align-items: start;
+}
+
+/* 1. 左上角空白占位 */
+.blank-corner {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 40px;
+    /* 或者适合的大小 */
+    height: 40px;
+}
+
+/* 2. 列提示放在网格的第一行右侧 */
+.col-hints {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    gap: 0px;
+}
+
+/* 每个列提示是一个小的纵向容器 */
+.col-hint-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* 让数字从下往上对齐，如果想反过来可用 flex-start */
+    align-items: center;
+    min-width: 40px;
+    /* 跟棋盘格宽度保持一致 */
+    border: 1px solid transparent;
+    /* 可选，用于调试 */
+}
+
+/* 3. 行提示放在网格的第二行左侧 */
+.row-hints {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 0px;
+}
+
+/* 每行提示 */
+.row-hint-item {
+    min-height: 40px;
+    /* 跟棋盘格高度一致 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 文字右对齐 */
+    border: 1px solid transparent;
+    /* 可选，用于调试 */
+}
+
+/* 4. 棋盘主体放在第二行、第二列 */
+.board-grid {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* 行 */
+.board-row {
+    display: flex;
+    gap: 0;
+}

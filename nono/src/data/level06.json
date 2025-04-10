@@ -1,0 +1,28 @@
+{
+    "rows": 6,
+    "cols": 6,
+    "rowHints": [
+        [1, 1],
+        [6],
+        [6],
+        [4],
+        [2],
+        [2]
+    ],
+    "colHints": [
+        [2],
+        [4],
+        [5],
+        [5],
+        [4],
+        [2]
+    ],
+    "solution": [
+        [false, true, false, false, true, false],
+        [true, true, true, true, true, true],
+        [true, true, true, true, true, true],
+        [false, true, true, true, true, false],
+        [false, false, true, true, false, false],
+        [false, false, true, true, false, false]
+    ]
+}
