@@ -1,3 +1,4 @@
+/* Tile.css - 示例，可根据项目需要自行调整 */
 .tile {
     width: 40px;
     height: 40px;
@@ -10,19 +11,29 @@
     user-select: none;
     font-weight: bold;
     font-size: 1.2em;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
+/* 玩家填色：背景深色、文字白色 */
 .tile.filled {
     background-color: #333;
     color: #fff;
 }
 
+/* 玩家打叉：底色白，文字红色 */
 .tile.marked {
     background-color: #fff;
     color: red;
 }
 
+/* 锁定的格子：常见做法是加个高亮边框，表示无法再更改 */
 .tile.locked {
-    /* 让锁定格子有些特殊显示，比如边框加粗/背景变色等 */
     outline: 2px solid gold;
+    /* 或其它颜色 */
+}
+
+/* 你也可以为 locked + filled 的情况增加更具体的组合样式 */
+.tile.locked.filled {
+    background-color: #666;
+    /* 或者与普通 .filled 稍有区别 */
 }
